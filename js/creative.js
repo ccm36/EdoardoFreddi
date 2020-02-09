@@ -15,6 +15,16 @@
     }
   });
 
+  // Opens wine portfolio when RoccaDeiForti is clicked
+  $('#roccaDeiForti-logo').click(function() {
+    $('#roccaDeiForti-wine-portfolio').removeClass("collapse");
+  });
+
+  // Collapse wine portfolio when RoccaDeiForti is clicked
+  $('#roccaDeiForti-logo-collapse').click(function() {
+    $('#roccaDeiForti-wine-portfolio').addClass("collapse");
+  });
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
