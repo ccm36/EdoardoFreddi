@@ -503,9 +503,9 @@ mark,
 }
 
 .img-producer {
-  max-width: 100%;
-  height: auto;
-  padding-bottom: 10px;
+  max-height: 120px;
+  width: auto;
+  padding-bottom: 15px;
 }
 
 .figure {
