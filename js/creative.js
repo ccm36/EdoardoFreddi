@@ -15,6 +15,26 @@
     }
   });
 
+  // Open wine portfolio when RoccaDeiForti is clicked
+  $('#roccaDeiForti-logo').click(function() {
+    $('#roccaDeiForti-portfolio').removeClass("collapse");
+  });
+
+  // Collapse wine portfolio when RoccaDeiForti is clicked
+  $('#roccaDeiForti-logo-collapse').click(function() {
+    $('#roccaDeiForti-portfolio').addClass("collapse");
+  });
+
+  // Open wine portfolio when Progetti Agricoli is clicked
+  $('#progettiAgricoli-logo').click(function() {
+    $('#progettiAgricoli-portfolio').removeClass("collapse");
+  });
+
+  // Collapse wine portfolio when Progetti Agricoli is clicked
+  $('#progettiAgricoli-logo-collapse').click(function() {
+    $('#progettiAgricoli-portfolio').addClass("collapse");
+  });
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
@@ -54,5 +74,21 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
+
+    // Magnific popup calls
+    $('.progettiAgricoli-portfolio').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      tLoading: 'Loading image #%curr%...',
+      mainClass: 'mfp-img-mobile',
+      gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1]
+      },
+      image: {
+        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+      }
+    });
 
 })(jQuery); // End of use strict

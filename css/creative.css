@@ -503,9 +503,9 @@ mark,
 }
 
 .img-producer {
-  max-width: 100%;
-  height: auto;
-  padding-bottom: 10px;
+  max-height: 120px;
+  width: auto;
+  padding-bottom: 15px;
 }
 
 .figure {
@@ -9747,5 +9747,5 @@ header.masthead h1 {
 }
 
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
+  opacity: 0.9;
 }
